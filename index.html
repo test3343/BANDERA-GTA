@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANDERA GTA - Онлайн гра про Україну</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        .hero {
+            background: url('background.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .download-btn {
+            background-color: #ffcc00;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 15px auto;
+            animation: pulse 2s infinite;
+            font-weight: bold;
+            box-shadow: 0 0 10px #ffcc00;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #ffaa00;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px #ffcc00; }
+            50% { box-shadow: 0 0 20px #ffaa00; }
+            100% { box-shadow: 0 0 10px #ffcc00; }
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gallery img {
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+        .gallery img:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        audio {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>ОНЛАЙН ГРА ПРО УКРАЇНУ!</h1>
+        <p><strong>BANDERA GTA</strong> — це реалістична онлайн гра про нашу країну, в якій відтворена вся краса наших міст, справжніх авто, де ти зможеш попрацювати на крутих роботах.</p>
+        <a href="https://drive.google.com/file/d/1Mu8KXU8HeG9tsJmhHDBzyD91wH7kzJCp/view?usp=sharing" target="_blank">
+            <button class="download-btn">СКАЧАТИ ГРУ</button>
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>АВТОМОБІЛІ В BANDERA GTA</h2>
+        <p>Величезний вибір імпортних та вітчизняних авто. Ось приклади:</p>
+        <div class="gallery">
+            <img src="https://cdn.bmwblog.com/wp-content/uploads/2022/01/2022-bmw-m5-cs-02.jpg" alt="BMW M5">
+            <img src="https://cdn.bmwblog.com/wp-content/uploads/2021/06/2022-bmw-m4-competition-xdrive-00.jpg" alt="BMW M4">
+        </div>
+
+        <h2>ЦІКАВІ ФАКТИ ТА АНІКДОТИ</h2>
+        <p><strong>Факт 1:</strong> BMW M5 — це одна з найшвидших і найпотужніших машин на ринку, розвиває швидкість до 300 км/год!</p>
+        <p><strong>Факт 2:</strong> BMW M4 має унікальний дизайн, який робить кожен поворот головою на вулицях.</p>
+
+        <p><strong>Анікдот:</strong> Два автомобіля BMW їдуть по дорозі. Один запитує: "Як думаєш, що у нас спільного?" Другий відповідає: "Ми обоє — швидкі, стильні і завжди на вищому рівні!"</p>
+
+        <h2>МУЗИКА АТМОСФЕРИ</h2>
+        <p>Вмикай "Касету" і кайфуй під час гри!</p>
+        <audio controls autoplay loop>
+            <source src="https://cdn.pixabay.com/download/audio/2022/11/15/audio_23647f3f1b.mp3?filename=kasseta-kasseta-126986.mp3" type="audio/mpeg">
+            Ваш браузер не підтримує аудіо.
+        </audio>
+    </div>
+
+</body>
+</html>
